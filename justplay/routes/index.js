@@ -8,13 +8,13 @@ exports.index = function(req, res){
 };
 
 exports.home = function(req, res){
-	res.render('home', {title: "Home"})
+	res.render('home', {title: "Home"});
 };
 
 exports.create = function(req, res){
-	res.render('create', {title: "Create a Game."})
+	res.render('create', {title: "Create a Game."});
 };
 
 exports.find = function(req, res){
-	res.render('find', {title: "Find a game"})
+	res.render('find', {title: "Find a game"});
 };
