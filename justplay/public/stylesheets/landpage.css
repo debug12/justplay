@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	background:
 	url('http://illusionapparel.com/wp-content/uploads/2011/04/Grey-website-background-1024x640.jpg');
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	display:compact;
 
 };
