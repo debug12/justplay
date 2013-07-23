@@ -16,5 +16,13 @@ exports.create = function(req, res){
 };
 
 exports.find = function(req, res){
-	res.render('find', {title: "Find a game"});
+	res.render('find', {title: "Find a game"})
+};
+
+exports.ronnie = function(req, res){
+	res.render('ronniesfirsttime');
+}
+
+exports.hirsh = function(req, res){
+	res.render('hirshsfirst');
 };
