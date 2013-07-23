@@ -22,3 +22,7 @@ exports.find = function(req, res){
 exports.ronnie = function(req, res){
 	res.render('ronniesfirsttime');
 }
+
+exports.hirsh = function(req, res){
+	res.render('hirshsfirst');
+}

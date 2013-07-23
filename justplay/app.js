@@ -29,6 +29,7 @@ app.configure('development', function(){
 
 app.get('/', routes.home);
 app.get('/ronniesfirsttime', routes.ronnie);
+app.get('/hirshsfirst', routes.hirsh);
 app.get('/create', routes.create);
 app.get('/find', routes.find);
 app.get('/users', user.list);
