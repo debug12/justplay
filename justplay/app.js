@@ -27,7 +27,9 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-app.get('/', routes.index);
+app.get('/', routes.home);
+app.get('/create', routes.create);
+app.get('/find', routes.find);
 app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
