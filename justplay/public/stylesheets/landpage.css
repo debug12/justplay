@@ -9,11 +9,9 @@ div.transbox {
 	background-image:url('mooning.png')
 	border:1px solid black;
 	opacity: 0.6;
-	position: fixed
-	right: 100px
-	left:100px
-}
-=======
+	position: fixed;
+	right: 100px;
+	left:100px;
 	background-repeat: repeat-x;
 }
 
@@ -27,23 +25,18 @@ div.transbox {
 	left:100px;
 }
 
->>>>>>> f0f76b33a8597bfa4d3eccaafaaedc447953ffbb
 div.transbox p {
-	margin:30px 40px
-	font-weight:bold
-	color:#000000
-	position:fixed
-	top: 300px
-	left:250px
-<<<<<<< HEAD
-	right:250px
+	margin:30px 40px;
+	font-weight:bold;
+	color:#000000;
+	position:fixed;
+	top: 300px;
+	left:250px;
+	right:250px;
 }
 
 h1,h2 {
-	font-family: 'Courgette', cursive
-
-}
-=======
+	font-family: 'Courgette', cursive;
 	right:250px;
 }
 
@@ -54,7 +47,7 @@ h1,h2 {
 
 }
 
->>>>>>> f0f76b33a8597bfa4d3eccaafaaedc447953ffbb
 button {
-	color:blue
+	color:blue;
+
 }
