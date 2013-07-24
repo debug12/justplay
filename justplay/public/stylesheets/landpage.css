@@ -8,5 +8,11 @@ body {
 };
 
 h1 {
-	font-family: 'Courgette', cursive
+	font-family: 'Courgette', cursive;
+	left:50px;
+	top:20px;
+};
+div {
+	position:absolute;
+	top:150px;
 }
