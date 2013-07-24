@@ -1,5 +1,6 @@
 body {
 	background-image:url('Background.jpg');
+<<<<<<< HEAD
 	background-repeat: repeat-x
 }
 
@@ -12,6 +13,21 @@ div.transbox {
 	right: 100px
 	left:100px
 }
+=======
+	background-repeat: repeat-x;
+}
+
+div.transbox {
+	margin:10px 20px 10px;
+	background-image:url('mooning.png');
+	border:1px solid black;
+	opacity: 0.6;
+	position: fixed;
+	right: 100px;
+	left:100px;
+}
+
+>>>>>>> f0f76b33a8597bfa4d3eccaafaaedc447953ffbb
 div.transbox p {
 	margin:30px 40px
 	font-weight:bold
@@ -19,6 +35,7 @@ div.transbox p {
 	position:fixed
 	top: 300px
 	left:250px
+<<<<<<< HEAD
 	right:250px
 }
 
@@ -26,6 +43,18 @@ h1,h2 {
 	font-family: 'Courgette', cursive
 
 }
+=======
+	right:250px;
+}
+
+h1,h2 {
+	font-family: 'Courgette', cursive;
+    color: white;
+    text-align: center;
+
+}
+
+>>>>>>> f0f76b33a8597bfa4d3eccaafaaedc447953ffbb
 button {
 	color:blue
 }
