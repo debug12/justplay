@@ -4,6 +4,22 @@
 		<title> <%=title%> </title>
 	</head>
 	<body>
-		Content goes here.
+		<form method = "POST">
+			<label for = "location">Location: </label>	
+			<input type = "text" placeholder = "address"><br>
+			<label for = "sport">Sport </label>
+			<select name = "sport">
+			<option value = "basketball">Basketball</option>
+			<option value = "tennis">Tennis</option>
+			<option value = "soccer">Soccer</option>
+			<option value = "frisbee">Ultimate</option>
+			</select><br><br><br>
+			Start Date and Time:
+				<input type = "datetime-local" name = "starttime"><br><br>
+			End Date and Time:
+				<input type = "datetime-local" name = "endtime"><br><br>
+			<label>Describe your Event</label><br>
+      		<textarea rows="5" cols="50" placeholder="Event Description Here..." name="description" tabindex="6"></textarea><br><br><br>
+		</form>	
 	</body>
 </html>

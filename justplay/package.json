@@ -1,5 +1,5 @@
 {
-  "name": "application-name",
+  "name": "justplay",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,5 +8,15 @@
   "dependencies": {
     "express": "3.1.0",
     "ejs": "*"
-  }
+  },
+  "description": "ERROR: No README.md file found!",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": "",
+  "keywords": [
+    "just",
+    "play"
+  ],
+  "author": "Team",
+  "license": "BSD"
 }
