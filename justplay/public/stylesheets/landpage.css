@@ -1,18 +1,25 @@
-body {
-	margin: 0;
-	background:
-	url('http://illusionapparel.com/wp-content/uploads/2011/04/Grey-website-background-1024x640.jpg');
-	background-repeat: repeat;
-	display:compact;
-	font-family:cursive;
-};
+div.background {
+	background:url(Background.jpg) repeat;
+}
+
+div.transbox {
+	width:400px;
+	height:180px;
+	margin:30p 50px;
+	background-color:#ffffff;
+	border:1px solid black;
+	opacity: 0.6;
+}
+
+div.transbox p {
+	margin:30px 40px;
+	font-weight:bold;
+	color:#000000;
+	text-align: center;
+}
 
 h1 {
 	font-family: 'Courgette', cursive;
 	left:50px;
 	top:20px;
 };
-div {
-	position:absolute;
-	top:150px;
-}
