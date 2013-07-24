@@ -1,17 +1,18 @@
 body {
 	background-image:url('Background.jpg');
 	background-repeat: repeat-x;
-};
+}
 
 div.transbox {
-	margin:10p 20px 10px;
+	margin:10px 20px 10px;
 	background-image:url('mooning.png');
 	border:1px solid black;
 	opacity: 0.6;
 	position: fixed;
 	right: 100px;
 	left:100px;
-};
+}
+
 div.transbox p {
 	margin:30px 40px;
 	font-weight:bold;
@@ -20,12 +21,13 @@ div.transbox p {
 	top: 300px;
 	left:250px
 	right:250px;
-};
+}
 
 h1,h2 {
 	font-family: 'Courgette', cursive;
 
-};
+}
+
 button {
 	color:blue;
 }
