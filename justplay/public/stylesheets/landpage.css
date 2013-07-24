@@ -3,15 +3,15 @@ div.background {
 }
 
 div.transbox {
-	width:400px;
-	height:180px;
-	margin:30p 50px;
-	background-color:#ffffff;
+	width:1500px;
+	height:3500px;
+	margin:10p 20px 10px;
+	background-color:#99CCff;
 	border:1px solid black;
 	opacity: 0.6;
 	position: fixed;
-	top: 300px;
-	left:300px;
+	right: 100px;
+	left:100px;
 }
 
 div.transbox p {
@@ -19,11 +19,12 @@ div.transbox p {
 	font-weight:bold;
 	color:#000000;
 	position:fixed;
-	top: 500px;
-	left:500px;
+	top: 300px;
+	left:250px
+	right:250px;
 }
 
-h1, h2 {
+h1,h2 {
 	font-family: 'Courgette', cursive;
-	position: fixed;
+
 };
