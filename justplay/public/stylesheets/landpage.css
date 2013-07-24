@@ -4,10 +4,8 @@ body {
 };
 
 div.transbox {
-	width:1500px;
-	height:3500px;
 	margin:10p 20px 10px;
-	background-color:url(mooning.png);
+	background-image:url('mooning.png');
 	border:1px solid black;
 	opacity: 0.6;
 	position: fixed;
@@ -28,3 +26,6 @@ h1,h2 {
 	font-family: 'Courgette', cursive;
 
 };
+button {
+	color:blue;
+}
