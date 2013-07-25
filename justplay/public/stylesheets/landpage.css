@@ -20,7 +20,7 @@ p {
 	margin:30px 40px;
 	font-weight:bold;
 	position:fixed;
-	top: 300px;
+	top: 250px;
 	left:250px;
 	right:250px;
     text-align: center;
@@ -29,14 +29,6 @@ p {
     z-index: 0;
 }
 
-div.vspace{
-    width: 100px;
-}
-
-#Make{
-    right: 100px;
-    left: 100px;
-}
 
 h1 {
     font-size: 450%;
