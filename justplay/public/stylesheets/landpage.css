@@ -1,7 +1,13 @@
-div.carousel-inner {
+/* div.carousel-inner {
 	background-size: cover;
 	z-index: -20;
 	text-align: center;
+} */
+
+body{
+	background-image: url('soccer.png');
+	background-size: cover;
+	z-index: -10;
 }
 
 div.transbox {
@@ -14,7 +20,7 @@ div.transbox {
 	left:200px;
 	top:0px;
 	bottom:0;
-    z-index: -10;
+    z-index: -9;
 }
 
 p {
