@@ -5,14 +5,14 @@
 } */
 
 body{
-	background-image: url('soccer.png');
+	background-image: url('interestingphoto.jpg');
 	background-size: cover;
 	z-index: -10;
 }
 
 div.transbox {
 	height: 10000px; 
-	background-image: url('mooning.png');
+	background-image: url('.png');
 	opacity: 0.5;
     background-repeat: repeat;
 	position: fixed;
@@ -44,7 +44,7 @@ h1 {
 
 h1,h2 {
 	font-family: 'Jacques Francois', serif;
-    color: black;    
+    color: white; 
     text-align: center;
     font-weight:bold;
     z-index: 0;
