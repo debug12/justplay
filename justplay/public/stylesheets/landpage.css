@@ -5,7 +5,7 @@
 } */
 
 body{
-	background-image: url('interestingphoto.jpg');
+	background-image: url('beachsoccer.jpg');
 	background-size: cover;
 	z-index: -10;
 }
@@ -44,7 +44,7 @@ h1 {
 
 h1,h2 {
 	font-family: 'Jacques Francois', serif;
-    color: white; 
+    color: black; 
     text-align: center;
     font-weight:bold;
     z-index: 0;
