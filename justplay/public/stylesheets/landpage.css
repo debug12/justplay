@@ -1,6 +1,7 @@
-body {
-	background-image:url('soccer.png');
+div.carousel-inner {
 	background-size: cover;
+	z-index: -20;
+	text-align: center;
 }
 
 div.transbox {
