@@ -2,23 +2,94 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-		<link rel="stylesheet" type= "text/css" href="landpage.css" media="screen">
+		<!--<link rel="stylesheet" type= "text/css" href="landpage.css" media="screen">-->
+		<!--Commented out the landpage.css stylesheet so you can see the raw carousel work its magic. looks pretty shitty, definitely will have to style it :)-->
 		<link href='http://fonts.googleapis.com/css?family=Jacques+Francois' rel='stylesheet' type='text/css'>
 		<link href="http://fonts.googleapis.com/css?family=Courgette" rel="stylesheet" type="text/css">
+		<link rel='shortcut icon' type='image/x-icon' href='img/icon_soccer.png' />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 		<title> <%=title%> </title>
 	
 	</head>
 	<body>
-		<h1 href="/">Just Play</h1>
+		<div id = "myCarousel" class = "carousel slide">
+		<div class = "carousel-inner">
+			<div class = "item active">
+				<img src = "img/eveningsoccer.jpg" alt = "" />
+				<div class="carousel-caption">
+					<p>
+						This is a caption for the first image.
+					</p>	
+				</div>
+			</div>
+			<div class="item">
+      			<img src="img/footballpic.jpg" alt="" />
+      			<div class="carousel-caption">
+        		<p>Caption text here</p>
+      			</div>
+   		    </div>
+   		    <div class="item">
+      			<img src="img/rugby.jpg" alt="" />
+      			<div class="carousel-caption">
+        		<p>Caption text here</p>
+      			</div>
+   		    </div>
+   		    <div class="item">
+      			<img src="img/shuttlecock.jpg" alt="" />
+      			<div class="carousel-caption">
+        		<p>Caption text here</p>
+      			</div>
+   		    </div>
+   		    <div class="item">
+      			<img src="img/soccervolley.jpg" alt="" />
+      			<div class="carousel-caption">
+        		<p>Caption text here</p>
+      			</div>
+   		    </div>
+   		    <div class="item">
+      			<img src="img/swimmingphoto.jpg" alt="" />
+      			<div class="carousel-caption">
+        		<p>Caption text here</p>
+      			</div>
+   		    </div>
+   		    <div class="item">
+      			<img src="img/tennis.jpg" alt="" />
+      			<div class="carousel-caption">
+        		<p>Caption text here</p>
+      			</div>
+   		    </div>
+		</div>
+		</div>	
+
+
+		<h1 class="test" href="/">Just Play</h1> <br>
 		<h2 href ="/">No more showing up to an empty gym. </h2>
-		<h2> Coordinate. Connect. Play.</h2>
+		<h2> <font color="green">Coordinate.</font> <font color="red">Connect. </font> <font color="blue">Play.</font></h2>
 		<div class= "transbox"></div>
-		<p>
+		<p id="icons">
+			<img src='img/icon_basketball.png'>
+			<img src='img/icon_baseball.png'>
+			<img src='img/icon_volleyball.png'>
+			<img src='img/icon_american_football.png'>
+			<img src='img/icon_soccer.png'>
+			<img src='img/icon_icehockey.png'>
+			<img src='img/icon_tennis.png'>
+			<img src='img/icon_cricket.png'>
+		<br>
+		<br>
+		<br>
 			<a class="text-center"> 
-				<button id="Make" class="btn btn-inverse btn-large">Make a Game</button>
-				<button id="Find" class="btn btn-large btn-inverse" type="button" href = "/find"> Find a Game </button>
+				<button id="Make" class="btn btn-inverse btn-large" type="button" href="/make">Make a Game</button>
+				<button id="Find" class="btn btn-inverse btn-large" type="button" href = "/find"> Find a Game </button>
 			</a>
 		</p>
+		<script src = "bootstrap.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			$('.carousel').carousel();
+		});
+		</script>
 		
 	</body>
 </html>

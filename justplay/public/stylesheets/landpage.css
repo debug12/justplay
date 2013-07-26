@@ -11,7 +11,7 @@ div.transbox {
 	position: fixed;
 	right: 200px;
 	left:200px;
-	top:0;
+	top:0px;
 	bottom:0;
     z-index: -10;
 }
@@ -20,13 +20,19 @@ p {
 	margin:30px 40px;
 	font-weight:bold;
 	position:fixed;
-	top: 300px;
+	top: 250px;
 	left:250px;
 	right:250px;
     text-align: center;
     font-family: cursive, serif, 'Jacques Francois';
     opacity: 0.8;
     z-index: 0;
+}
+
+
+h1 {
+    font-size: 450%;
+    bottom: 80px;
 }
 
 h1,h2 {
