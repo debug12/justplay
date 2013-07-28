@@ -8,13 +8,15 @@ body{
 	background-image: url('beachsoccer.jpg');
 	background-size: cover;
 	z-index: -10;
+	margin-top: 100px;
 }
 
 div.transbox {
-	height: 10000px; 
-	background-image: url('.png');
-	opacity: 0.5;
-    background-repeat: repeat;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-image: url('mooning.png');
+	opacity: 0.6;
+    background-size: cover;
 	position: fixed;
 	right: 200px;
 	left:200px;
@@ -24,26 +26,25 @@ div.transbox {
 }
 
 p {
-	margin:30px 40px;
 	font-weight:bold;
 	position:fixed;
-	top: 250px;
 	left:250px;
 	right:250px;
     text-align: center;
-    font-family: cursive, serif, 'Jacques Francois';
-    opacity: 0.8;
+    font-family: cursive, serif, 'Armata';
+    opacity: .8;
     z-index: 0;
 }
 
 
 h1 {
     font-size: 450%;
-    bottom: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 h1,h2 {
-	font-family: 'Jacques Francois', serif;
+	font-family: 'Ropa Sans', serif;
     color: black; 
     text-align: center;
     font-weight:bold;
