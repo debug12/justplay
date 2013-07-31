@@ -4,7 +4,6 @@ body{
 	z-index: -10;
 	margin-top: 100px;
 	text-align: center;
-	font-size: 30px;
 }
 
 
@@ -49,9 +48,17 @@ h1,h2 {
 }
 
 textarea{
-	width: 250px;
+	width: 210px;
+	font-family: 'Ropa Sans';
+	font-size: 20px;
 }
 
-input{
-	font-family: serif;
+input[type="text"]{
+	font-family: 'Ropa Sans';
+	font-size: 20px;
+}
+
+select{
+	font-family: 'Ropa Sans';
+	font-size: 20px;
 }

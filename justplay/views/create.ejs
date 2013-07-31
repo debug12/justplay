@@ -4,26 +4,31 @@
 		<title> <%=title%> </title>
 		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 		<link rel="stylesheet" type= "text/css" href="createpage.css" media="screen">
+		<link rel='shortcut icon' type='image/x-icon' href='img/icon_american_football.png' />
+		<link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<div class= "transbox"></div>
+		<h1> Just Play </h1>
+		<h2> Tell us what, when and where. Simple. </h2>
 		<form method = "POST">
 			<label for = "address"></label>
-			<input type = "text" placeholder = "Address">
+			<input type = "text" placeholder = "ADDRESS">
 			<br><br>
 			<label for = "sport"></label>
 			<select name = "sport">
-				<option value = "basketball">Basketball</option>
-				<option value = "tennis">Tennis</option>
-				<option value = "soccer">Soccer</option>
-				<option value = "frisbee">Ultimate</option>
-				<option value = "volleball">Volleyball</option>	
+				<option value = "empty"></option>
+				<option value = "basketball">BASKETBALL</option>
+				<option value = "tennis">TENNIS</option>
+				<option value = "soccer">SOCCER</option>
+				<option value = "frisbee">FRISBEE</option>
+				<option value = "volleball">VOLLEYBALL</option>	
 			</select>
 			<br><br>
-				<input type = "datetime-local" name = "starttime"><br><br>
+				<input type = "datetime-local" name = "starttime" placeholder = "Start Time"><br><br>
 				<input type = "datetime-local" name = "endtime"><br><br>
 			<label></label><br>
-      		<textarea rows="5" cols="50" placeholder="Event Description" name="description" tabindex="6"></textarea>
+      		<textarea rows="5" cols="50" placeholder="DESCRIPTION" name="description" tabindex="6"></textarea>
       		<br><br><br>
 		</form>	
 	</body>
