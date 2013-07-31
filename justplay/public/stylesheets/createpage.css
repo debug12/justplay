@@ -1,16 +1,12 @@
-/* div.carousel-inner {
-	background-size: cover;
-	z-index: -20;
-	text-align: center;
-} */
-
 body{
 	background-image: url('beachsoccer.jpg');
 	background-size: cover;
 	z-index: -10;
 	margin-top: 100px;
 	text-align: center;
+	font-size: 30px;
 }
+
 
 div.transbox {
 	margin-top: 50px;
@@ -52,4 +48,10 @@ h1,h2 {
     z-index: 0;
 }
 
+textarea{
+	width: 250px;
+}
 
+input{
+	font-family: serif;
+}
