@@ -29,7 +29,7 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-app.get('/', routes.home);
+app.get('/', routes.ronnieshome);
 app.get('/create', routes.create);
 app.get('/find', routes.find);
 app.get('/users', user.list);
