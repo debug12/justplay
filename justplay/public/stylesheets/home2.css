@@ -1,0 +1,16 @@
+html{
+	background-image: url('img/grass.jpg');
+}
+
+h1#title{
+	margin-top: 10%; /* do 40% for media query smaller screens */
+	font-family: 'Fresca';
+	text-align: center;
+	font-size: 120px;
+}
+
+h4.tagline{
+	text-align: center;
+	font-family: 'Fresca';
+	font-size: 40px;
+}

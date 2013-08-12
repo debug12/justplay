@@ -22,7 +22,8 @@ app.configure(function(){
   app.use(app.router);
   app.use(express.static(path.join(__dirname, 'public')));
   app.use(express.static(__dirname + '/public/scripts'));
-  app.use(express.static(__dirname + '/public/stylesheets'))
+  app.use(express.static(__dirname + '/public/stylesheets'));
+  app.use(express.static(__dirname + '/public/img'));
 });
 
 app.configure('development', function(){
@@ -33,6 +34,7 @@ app.get('/', routes.home);
 app.get('/create', routes.create);
 app.get('/find', routes.find);
 app.get('/users', user.list);
+app.get('/home2', routes.home2);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
