@@ -1,16 +1,9 @@
-html{
-	background-image: url('img/grass.jpg');
+body{
+	background-image: url('img/greyzz.png');
 }
 
 h1#title{
-	margin-top: 10%; /* do 40% for media query smaller screens */
-	font-family: 'Fresca';
 	text-align: center;
-	font-size: 120px;
+	font-family: 'Yesteryear';
 }
 
-h4.tagline{
-	text-align: center;
-	font-family: 'Fresca';
-	font-size: 40px;
-}
