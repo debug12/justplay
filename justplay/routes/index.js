@@ -11,6 +11,10 @@ exports.home = function(req, res){
 	res.render('home', {title: "Home"});
 };
 
+exports.ronnieshome = function(req, res){
+	res.render('ronnieshome', {title: "Ronnie's Home"});
+};
+
 exports.create = function(req, res){
 	res.render('create', {title: "Create a Game."});
 };
