@@ -2,7 +2,7 @@ var db = require('mongojs').connect("justplay", ['users', 'games']);
 
 var findUser = function(id, callback){
 	db.users.findOne({_id: id}, function(e, o){
-		if(e) callback(0);
+		if(e) callback("error", e);
 		if(o) callback(1, o);
 		else callback(0);
 	});
@@ -17,3 +17,4 @@ var addUser = function(data, callback){
 
 exports.findUser = findUser;
 exports.addUser = addUser;
+

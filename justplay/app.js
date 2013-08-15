@@ -35,6 +35,8 @@ app.get('/create', routes.create);
 app.get('/find', routes.find);
 app.get('/users', user.list);
 app.get('/home2', routes.home2);
+app.get('/auth/facebook', routes.auth);
+app.get('/auth/facebook/callback', routes.callback);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
