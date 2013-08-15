@@ -2,6 +2,9 @@
 /*
  * GET home page.
  */
+ var passport = require('passport');
+ var FacebookStrategy = require('passport-facebook').Strategy;
+ var db = require('./db.js');
 
 exports.index = function(req, res){
   res.render('index', { title: 'Express' });
