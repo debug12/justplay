@@ -1,5 +1,5 @@
 body{
-    background: url('mj.jpg') no-repeat center center fixed;	
+    background: url('footballpic3.jpg') no-repeat center center fixed;	
 	z-index: -10;
     padding: 0;
 	top: 500px;
@@ -34,7 +34,7 @@ body{
 .imagetable{
     margin-top: 130px;
     position: absolute;
-    left:380px;
+    left:300px;
 
 }
 
@@ -44,8 +44,8 @@ table{
 }
 
 img {
-    width:200px;
-    height: 100px;
+    width:250px;
+    height: 150px;
     float:center;
     margin:5px;
 }
