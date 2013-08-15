@@ -1,0 +1,23 @@
+body{
+	background-image: url('paper_fibers.png');
+	background-size: cover;
+	z-index: -10;
+	margin-top: 100px;
+	text-align: center;
+}
+
+h1 {
+    font-size: 450%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Ropa Sans', serif;
+    color: black; 
+    text-align: center;
+    font-weight:bold;
+    z-index: 0;
+}
+
+table {
+	text-align: center;
+}
+
