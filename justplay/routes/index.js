@@ -14,8 +14,8 @@ exports.home = function(req, res){
 	res.render('home', {title: "Home"});
 };
 
-exports.ronnieshome = function(req, res){
-	res.render('ronnieshome', {title: "Ronnie's Home"});
+exports.page2 = function(req, res){
+	res.render('page2', {title: "Page 2"});
 };
 
 exports.create = function(req, res){
