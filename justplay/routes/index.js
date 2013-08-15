@@ -14,11 +14,11 @@
  },
  	function(accessToken, refreshToken, profile, done){
  		db.findUser(profile._json.id, function(good, result){
- 			if(good == "error") {return done(result)}
+ 			if(good == "error") {return done(result);}
  			else if(!good){
  				db.addUser(profile._json, function(good, user){
  					return done(null, user);
- 				})
+ 				});
  			} 
  			done(null, result);
  		})
@@ -51,5 +51,5 @@ exports.home2 = function(req, res){
 
 exports.auth = passport.authenticate('facebook', {scope: ['email']});
 exports.callback = passport.authenticate('facebook', {successRedirect: '/home2',
-													  failureRedirect: '/'})
+													  failureRedirect: '/home2'})
 
