@@ -15,12 +15,13 @@
  	function(accessToken, refreshToken, profile, done){
  		db.findUser(profile._json.id, function(good, result){
  			if(good == "error") {return done(result);}
- 			else if(!good){
- 				db.addUser(profile._json, function(good, user){
- 					return done(null, user);
+ 			else if(good == 0){
+ 				db.addUser(profile._json, function(great, user){
+ 					if(great){return done(null, user);}
  				});
+ 			}else{
+ 				return done(null, result);
  			} 
- 			done(null, result);
  		})
  	}
  ));

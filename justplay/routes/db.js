@@ -9,9 +9,9 @@ var findUser = function(id, callback){
 }
 
 var addUser = function(data, callback){
-	db.users.save(data, function(e, o){
+	db.users.insert(data, function(e, o){
 		if(e) callback(0);
-		else callback(1);
+		else callback(1, o);
 	})
 }
 
