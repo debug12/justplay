@@ -7,6 +7,19 @@
  var FacebookStrategy = require('passport-facebook').Strategy;
  var db = require('./db.js');
 
+ passport.serializeUser(function(user, done){
+ 	done(null, user.id);
+ });
+
+ passport.deserializeUser(function(id, done){
+ 	db.findUser(id, function(good, user){
+ 		if(good){
+ 			done(null, user);
+ 		}
+ 	});
+ });
+
+
  passport.use(new FacebookStrategy({
  	clientID: config.appID,
  	clientSecret: config.appSecret,
@@ -17,7 +30,7 @@
  			if(good == "error") {return done(result);}
  			else if(good == 0){
  				db.addUser(profile._json, function(great, user){
- 					if(great){return done(null, user);}
+ 					if(great){return done(null, user[0]);}
  				});
  			}else{
  				return done(null, result);
@@ -25,6 +38,7 @@
  		})
  	}
  ));
+
 
 exports.index = function(req, res){
   res.render('index', { title: 'Express' });
@@ -51,6 +65,7 @@ exports.home2 = function(req, res){
 }
 
 exports.auth = passport.authenticate('facebook', {scope: ['email']});
-exports.callback = passport.authenticate('facebook', {successRedirect: '/home2',
-													  failureRedirect: '/home2'})
+
+exports.callback = passport.authenticate('facebook', {successRedirect: '/create',
+													  failureRedirect: '/failure'});
 

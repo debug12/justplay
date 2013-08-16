@@ -4,6 +4,7 @@
  */
 
 var express = require('express')
+  , passport = require('passport')
   , routes = require('./routes')
   , user = require('./routes/user')
   , http = require('http')
@@ -19,6 +20,10 @@ app.configure(function(){
   app.use(express.logger('dev'));
   app.use(express.bodyParser());
   app.use(express.methodOverride());
+  app.use(express.cookieParser());
+  app.use(express.session({ secret: 'dontdropdatdananaaintworryboutnothing'}));
+  app.use(passport.initialize());
+  app.use(passport.session());
   app.use(app.router);
   app.use(express.static(path.join(__dirname, 'public')));
   app.use(express.static(__dirname + '/public/scripts'));
