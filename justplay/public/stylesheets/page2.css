@@ -48,7 +48,7 @@ img {
     width:220px;
     height: 220px;
     float:center;
-    opacity: 1;
+    opacity: .84;
     margin: 5px;
     -moz-box-shadow: 1.5px 1.5px 1.5px 3px #3e3e3e;
     box-shadow: 1.5px 1.5px 1.5px 3px #3e3e3e;
@@ -57,7 +57,7 @@ img {
 
 a:hover img{
     border:1px solid #3e3e3e;
-    opacity: .85;
+    opacity: 1;
     
 }
 
@@ -70,13 +70,17 @@ a:hover img{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+div.picture:hover {
+    opacity: .8;
+}
+
 div.picture {
-    -moz-border-radius: 50px/50px;
-    -webkit-border-radius: 50px 50px;
-    border-radius: 50px/50px;;
-    border:solid 21px #f00; 
-    width:50px;
-    height:50px; 
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url(basketball4.jpg) no-repeat;
 }
 
 
