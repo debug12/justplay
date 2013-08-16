@@ -26,9 +26,9 @@
       <h3 class = "formTitle"> Guest Login </h3> 
       <h5 class = "formTitle"> We need just a little bit of information before we can sign you in.</h5>
 	   	<div id = "formContent">   
-	      <form method = "POST" id = "guestForm">
-	      	<input type = "text" placeholder = "Full Name"/><br>
-	      	<input type = "email" placeholder = "Email"/><br>
+	      <form method = "POST" action = "guestLogin" id = "guestForm">
+	      	<input name = "name" type = "text" placeholder = "Full Name" required/><br>
+	      	<input name = "email" type = "email" placeholder = "Email" required/><br>
 	      	<input type = "submit">
 	      </form>
     </div>
