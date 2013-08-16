@@ -48,15 +48,16 @@ img {
     width:220px;
     height: 220px;
     float:center;
-    opacity: .84;
+    opacity: 1;
     margin: 5px;
-    -moz-box-shadow: 1.5px 1.5px 1.5px 3px #ccc;
-    box-shadow: 1.5px 1.5px 1.5px 3px #ccc;
+    -moz-box-shadow: 1.5px 1.5px 1.5px 3px #3e3e3e;
+    box-shadow: 1.5px 1.5px 1.5px 3px #3e3e3e;
+;
 }
 
 a:hover img{
-    border:1px solid #ccc;
-    opacity: 1;
+    border:1px solid #3e3e3e;
+    opacity: .85;
     
 }
 
