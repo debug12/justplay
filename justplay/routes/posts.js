@@ -5,6 +5,6 @@ exports.guestLogin = function(req, res){
 		name: name,
 		email: email
 	}
-	req.user = obj;
+	req.session.user = obj;
 	res.redirect('/create');
 }

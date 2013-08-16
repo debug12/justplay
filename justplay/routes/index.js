@@ -53,7 +53,8 @@ exports.page2 = function(req, res){
 };
 
 exports.create = function(req, res){
-	console.log(req.user)
+	console.log(req.user);
+	console.log(req.session.user);
 	res.render('create', {title: "Create a Game."});
 };
 
