@@ -3,33 +3,17 @@
 	<head>
 		<title> <%=title%> </title>
 		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-		<link rel="stylesheet" type= "text/css" href="createpage.css" media="screen">
-		<link rel='shortcut icon' type='image/x-icon' href='img/icon_american_football.png' />
-		<link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type= "text/css" href="create.css" media="screen">
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div class= "transbox"></div>
-		<h1> Just Play </h1>
-		<h2> Tell us what, when and where. Simple. </h2>
-		<form method = "POST">
-			<label for = "address"></label>
-			<input type = "text" placeholder = "ADDRESS">
-			<br><br>
-			<label for = "sport"></label>
-			<select name = "sport">
-				<option value = "empty"></option>
-				<option value = "basketball">BASKETBALL</option>
-				<option value = "tennis">TENNIS</option>
-				<option value = "soccer">SOCCER</option>
-				<option value = "frisbee">FRISBEE</option>
-				<option value = "volleball">VOLLEYBALL</option>	
-			</select>
-			<br><br>
-				<input type = "datetime-local" name = "starttime" placeholder = "Start Time"><br><br>
-				<input type = "datetime-local" name = "endtime"><br><br>
-			<label></label><br>
-      		<textarea rows="5" cols="50" placeholder="DESCRIPTION" name="description" tabindex="6"></textarea>
-      		<br><br><br>
-		</form>	
+		<div id = "nav">
+			<h1 id = "title"> justplay </h1>
+		</div>
+		<div class = "darker">
+			<div id = "content">
+				<h1> tell us when, we'll take care of the rest. </h1>
+			</div>
+		</div>
 	</body>
 </html>

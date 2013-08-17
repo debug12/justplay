@@ -53,9 +53,13 @@ exports.page2 = function(req, res){
 };
 
 exports.create = function(req, res){
-	console.log(req.user);
-	console.log(req.session.user);
-	res.render('create', {title: "Create a Game."});
+	config.redirect(req, function(good){
+		if(good){
+			res.render('create', {title: "Create a Game."});
+		} else{
+			res.redirect('/');
+		}
+	});
 };
 
 exports.find = function(req, res){
