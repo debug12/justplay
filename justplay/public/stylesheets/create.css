@@ -23,8 +23,16 @@ body{
 	/* Adds the transparent background */
 }
 
-#title{
+.title{
+	float: left;
 	color: white;
+	text-decoration: none;
+}
+
+.title:hover{
+	text-decoration: none;
+	color: white;
+	opacity: 0.8;
 }
 
 #content{
