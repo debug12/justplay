@@ -75,3 +75,6 @@ exports.auth = passport.authenticate('facebook', {scope: ['email']});
 exports.callback = passport.authenticate('facebook', {successRedirect: '/create',
 													  failureRedirect: '/failure'});
 
+exports.geo = function(req, res){
+	res.render('geolocation');
+}

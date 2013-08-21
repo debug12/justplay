@@ -44,6 +44,7 @@ app.get('/users', user.list);
 app.get('/home2', routes.home2);
 app.get('/auth/facebook', routes.auth);
 app.get('/auth/facebook/callback', routes.callback);
+app.get('/geolocation', routes.geo);
 
 app.post('/guestLogin', posts.guestLogin);
 

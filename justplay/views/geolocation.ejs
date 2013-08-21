@@ -29,6 +29,7 @@
  
 	<div id="mapContainer">
 		<!-- This is where Google map will go. -->
+		<div>Hello </div>
 	</div>
  
  
@@ -70,6 +71,7 @@
 				),
 				title: (label || "")
 			});
+
  
 			// Return the new marker reference.
 			return( marker );
@@ -138,7 +140,8 @@
 					var newCenter = new google.maps.LatLng(
 						position.coords.latitude,
 						position.coords.longitude
-					)
+					);
+					console.log(position.coords.altitude);
 					map.panTo(newCenter)
  
 				},
@@ -177,6 +180,11 @@
 						position.coords.longitude,
 						"Updated / Accurate Position"
 					);
+					var newCenter = new google.maps.LatLng(
+						position.coords.latitude,
+						position.coords.longitude
+					);
+					map.panTo(newCenter);
  
 				}
 			);
