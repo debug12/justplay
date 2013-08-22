@@ -44,6 +44,7 @@ div.livefeed {
 li {
     height: 50px;
     width:100%;
+    left:0;
     background: white;
     border-color:black;
     border-style:solid;
