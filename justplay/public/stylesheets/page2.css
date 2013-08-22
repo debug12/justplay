@@ -2,11 +2,7 @@ body{
     padding: 0;
     font-family: 'Roboto';
     margin: 0;
-    background: url('soccerfield.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url('retina_wood.png');
 }
 
 #nav{
@@ -34,14 +30,14 @@ body{
     font-size: 35px;
    }
 
-.darker{
+/**.darker{
     position: absolute;
     left: 0px;
     top: 0px;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-}
+}**/
 
 .lighter{
     opacity: 1;
