@@ -10,3 +10,6 @@ var redirect = function(req, callback){
 }
 
 exports.redirect = redirect;
+
+exports.googleServer = 'AIzaSyD7INzw43UKZakUdg4DPT1fCr0ACtB0BWE';
+exports.googleBrowser ='AIzaSyDrYa-tpMI0IY4PctUeq6wlPgEL35VxdXM'

@@ -6,6 +6,18 @@
  var config = require('./config.js');
  var FacebookStrategy = require('passport-facebook').Strategy;
  var db = require('./db.js');
+ var GooglePlace = require('google-places');
+ var places = new GooglePlace(config.googleBrowser); 
+
+ places.search({keyword: 'Vermonster'}, function(e, res){
+ 	console.log(res.results[0].geometry);
+ });
+
+ places.autocomplete({input: 'Verm', types: "establishment"}, function(e, res){
+ 	res.predictions.forEach(function(prediction){
+ 		console.log(prediction.description)
+ 	})
+ })
 
  passport.serializeUser(function(user, done){
  	done(null, user.id);
@@ -18,7 +30,6 @@
  		}
  	});
  });
-
 
  passport.use(new FacebookStrategy({
  	clientID: config.appID,

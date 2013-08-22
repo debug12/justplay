@@ -4,6 +4,7 @@
 		<title> <%=title%> </title>
 		<link rel="stylesheet" type= "text/css" href="create.css" media="screen">
 		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	</head>
 	<body>
 		<div id = "nav">
@@ -13,8 +14,10 @@
 			<div id = "content">
 				<h1> tell us when, we'll take care of the rest. </h1><br>
 				<form>
-					<input type = "text" placeholder = "hello!"><br>
-					<input type = "text" placeholder = "your name?"><br>
+					<label for = "name"> Name yo' game: </label><input type = "text" placeholder = "hello!"><br>
+					<label for = "description"> Description: </label><input type = "text" placeholder = "your name?"><br>
+					<label for = "where">Where: </label><input type = "text" placeholder = "Add a place?" name = "where">
+
 					<input type = "submit">
 				</form>
 			</div>
