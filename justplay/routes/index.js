@@ -4,20 +4,22 @@
  */
  var passport = require('passport');
  var config = require('./config.js');
+ var http = require('http');
  var FacebookStrategy = require('passport-facebook').Strategy;
  var db = require('./db.js');
  var GooglePlace = require('google-places');
- var places = new GooglePlace(config.googleBrowser); 
+ var places = new GooglePlace(config.googleBrowser);
+ var foursquare = (require('foursquarevenues')(config.fourSquareId, config.fourSquareSecret));
 
- places.search({keyword: 'Vermonster'}, function(e, res){
- 	console.log(res.results[0].geometry);
+ var params = {
+ 	"near": 'Ann Arbor, MI',
+ 	"categoryId": '4f4528bc4b90abdf24c9de85',
+ 	"intent" : 'browse'
+ }
+
+ foursquare.getVenues(params, function(e, venues){
+ 	console.log(venues.response);
  });
-
- places.autocomplete({input: 'Verm', types: "establishment"}, function(e, res){
- 	res.predictions.forEach(function(prediction){
- 		console.log(prediction.description)
- 	})
- })
 
  passport.serializeUser(function(user, done){
  	done(null, user.id);
