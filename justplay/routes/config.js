@@ -12,4 +12,6 @@ var redirect = function(req, callback){
 exports.redirect = redirect;
 
 exports.googleServer = 'AIzaSyD7INzw43UKZakUdg4DPT1fCr0ACtB0BWE';
-exports.googleBrowser ='AIzaSyDrYa-tpMI0IY4PctUeq6wlPgEL35VxdXM'
+exports.googleBrowser ='AIzaSyDrYa-tpMI0IY4PctUeq6wlPgEL35VxdXM';
+exports.fourSquareId = 'Q4M1XAOMVOIB3XL5I1QSY3PGQVLERQ2EYY1JC1UVLIFTQH3P';
+exports.fourSquareSecret = 'GYUFG5JYQFE3ZWDEAQ1YREYAEE0B3ZOGRBENITNQKKBJLO0V';

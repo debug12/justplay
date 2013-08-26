@@ -5,6 +5,9 @@
 		<link rel="stylesheet" type= "text/css" href="create.css" media="screen">
 		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<link href = "http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel = "stylesheet" type = "text/css">
+		<script src = "autocomplete4.js"></script>
 	</head>
 	<body>
 		<div id = "nav">
@@ -16,12 +19,44 @@
 				<form>
 					<label for = "name"> Name yo' game: </label><input type = "text" placeholder = "hello!"><br>
 					<label for = "description"> Description: </label><input type = "text" placeholder = "your name?"><br>
-					<label for = "where">Where: </label><input type = "text" placeholder = "Add a place?" name = "where">
+					<label for = "where">Where: </label><input id = "where" type = "text" placeholder = "Add a place?" name = "where">
 
 					<input type = "submit">
 				</form>
 			</div>
 			<button id = "demo">Try me!</button>
 		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var lat; var longi;
+				if(navigator.geolocation){
+					navigator.geolocation.getCurrentPosition(
+						function(position){
+							lat = position.coords.latitude;
+							longi = position.coords.longitude;
+							$("#where").foursquareAutocomplete({
+								  'latitude': lat,
+								  'longitude': longi,
+								  'oauth_token': "PXT2UFAGG3CN0IHJ5PCKNDY3Y4VXRPNC5FH5HOWB20SZIGJK",
+								  'minLength': 3,
+								  'search': function (event, ui) {
+								    $("#venue-name").html(ui.item.name);
+								    $("#venue-id").val(ui.item.id);
+								    $("#venue-address").html(ui.item.address);
+								    $("#venue-cityLine").html(ui.item.cityLine);
+								    $("#venue-icon").attr("src", ui.item.photo);
+								    return false;
+								  },
+								  'onError' : function (errorCode, errorType, errorDetail) {
+								    var message = "Foursquare Error: Code=" + errorCode + 
+								    ", errorType= " + errorType + 
+								    ", errorDetail= " + errorDetail;
+								    log(message);
+								  }
+								});	
+							})
+						}
+				});
+		</script>
 	</body>
 </html>
