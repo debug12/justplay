@@ -13,6 +13,7 @@ var express = require('express')
 
 var app = express();
 
+//load all environments
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
