@@ -12,6 +12,7 @@ var express = require('express')
   , path = require('path');
 
 var app = express();
+GLOBAL.GameCollection = require('./gamecollection-mongodb').GameCollection;
 
 //load all environments
 app.configure(function(){
@@ -37,6 +38,8 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
+GLOBAL.gameCollection = new GameCollection('localhost', 27017);
+
 app.get('/', routes.home);
 app.get('/create', routes.create);
 app.get('/page2', routes.page2);
@@ -48,6 +51,7 @@ app.get('/auth/facebook/callback', routes.callback);
 app.get('/geolocation', routes.geo);
 
 app.post('/guestLogin', posts.guestLogin);
+app.post('/gameSave', posts.gameSave);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
