@@ -1,5 +1,5 @@
-var DB = require('mongodb').Db;
-var Connection - require('mongodb').Connection;
+var Db = require('mongodb').Db;
+var Connection = require('mongodb').Connection;
 var Server = require('mongodb').Server;
 var BSON = require('mongodb').BSON;
 var ObjectID = require('mongodb').ObjectID;
@@ -10,14 +10,13 @@ GameCollection = function(host,port){
 };
 
 GameCollection.prototype.getCollection = function(callback){
-	this.db.collection('games', function(error,game_collection)){
+	this.db.collection('games', function(error,game_collection){
 		if (error) callback(error);
 		else callback(null, game_collection);
 	});
-});
+};
 
 //save
-
 GameCollection.prototype.save = function(games, callback) {
 	this.getCollection(function(error, game_collection) {
 		if(error) callback (error)

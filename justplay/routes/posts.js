@@ -7,4 +7,14 @@ exports.guestLogin = function(req, res){
 	}
 	req.session.user = obj;
 	res.redirect('/create');
-}
+};
+
+exports.gameSave  = function(req,res){
+	gameCollection.save({
+		sport: req.param('sport'),
+		descript: req.param('descrip'),
+		time: req.param('time')},
+		function(error, docs){
+			res.redirect('/create');
+		});
+	};
